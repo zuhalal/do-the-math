@@ -198,7 +198,7 @@ checkBtn.addEventListener('click', function() {
     let score = document.querySelector(".score").innerText;
     currScore = parseInt(score);
 
-    if (!inputVal) {
+    if (!parseInt(inputVal.value)) {
         displayMessage("Enter valid number");
         return;
     }
